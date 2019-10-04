@@ -1,0 +1,65 @@
+.u-Hide {
+    display: none;
+}
+
+.u-flex {
+    display: flex;
+}
+
+.u-flex-row {
+    flex-direction: row;
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+.u-flex-justify-center {
+    justify-content: center;
+}
+
+.u-flex-align-items {
+    align-items: center;
+}
+
+.bg-100 {
+    background-size: 100%;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    margin: 2rem 0;
+
+    label {
+        color: $gray;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    input {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: $yellow;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .input-error {
+        color: $red;
+        // display: none;
+        font-size: 0.8rem;
+    }
+}

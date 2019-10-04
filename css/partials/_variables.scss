@@ -1,0 +1,26 @@
+//Colors
+$rocketGreen: #13A48E;
+$lightGray: #f7f7f7;
+$gray: gray;
+$darkGray: #333333;
+$textColor: #ffffff;
+$hero-bg: rgba(0,0,0,0.4);
+$white: #ffffff;
+$yellow: #F5BE40;
+$black: #333333;
+$red: #ff0000;
+//Fonts
+$fontFamily: Arial, Helvetica, sans-serif;
+
+//Breakpoints
+$phone: 500px;
+$tablet: 1000px;
+$small-laptop: 1300px;
+$laptop: 1440px;
+
+@media (max-width: $laptop) {
+}
+@media (max-width: $tablet) {
+}
+@media (max-width: $phone) {
+}

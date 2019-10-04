@@ -1,0 +1,38 @@
+// Mobile Video
+.mobile-video {
+    display: none;
+    min-height: 300px;
+    width: 100%;
+
+    @media (max-width: $small-laptop) {
+        display: block;
+    }
+}
+
+.video-bg {
+    background-image: url(../images/video-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .play-button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 300px;
+
+        &:hover {
+            cursor: pointer;
+
+            svg {
+                stroke: $yellow;
+            }
+        }
+
+        svg {
+            height: 100px;
+            stroke: $white;
+            width: 100px;
+
+        }
+    }
+}

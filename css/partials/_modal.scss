@@ -1,0 +1,46 @@
+.modal-bg {
+    align-items: center;
+    background: $hero-bg;
+    bottom: 0;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    .modal-container {
+        background: $white;
+        border-radius: 10px;
+        max-height: 720px;
+        width: 80%;
+
+        .modal-body {
+            padding: 10px;
+
+            .modal-video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .modal-video-container iframe,
+            .modal-video-container object,
+            .modal-video-container embed {
+                height: 100%;
+                left: 0;
+                max-height: 700px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        .modal-footer {
+            bottom: 2%;
+            position: absolute;
+            right: 10%;
+        }
+    }
+}

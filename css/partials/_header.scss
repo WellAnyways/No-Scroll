@@ -1,0 +1,66 @@
+header {
+
+    display: grid;
+    grid-template-areas:
+    "logo phone";
+    padding: 0 8rem;
+    border-bottom: 2px outset $lightGray;
+
+    @media (max-width: $tablet) {
+        padding: 0 1rem;
+    }
+    .mast-head-image {
+        grid-area: logo;
+        height: 100%;
+        width: 208px;
+        @media (min-width: $phone) {
+          height: 100%;
+          width: 275px;
+        }
+    }
+
+
+
+    .phone {
+        grid-area: phone;
+        justify-self: end;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $darkGray;
+            font-size: 1rem;
+            font-family: $fontFamily;
+            height: 100%;
+            &:hover {
+                cursor: pointer;
+                color: lighten($darkGray,20%);
+                text-decoration: underline;
+            }
+            
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+            
+            @media (max-width: $tablet) {
+                .phone_number {
+                    display: none;
+                }
+            }
+            
+            .phone-icon {
+                float: left;
+                padding: 5px 10px;
+            }
+        }
+    }
+    @media (max-width: $tablet) {
+        #phone_number {
+            display: none;
+        }
+    }
+
+}

@@ -1,0 +1,109 @@
+// Footer
+footer {
+    background: $lightGray;
+    padding: 2rem 0;
+
+    .footer-container {
+        width:70%;
+        margin: auto;
+    }
+
+    .brag-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        .rocket-social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: $phone) {
+                width: 100%;
+            }
+
+            .rocket-logo {
+                margin: auto;
+            }
+
+            .social-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                div {
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        .boast-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                margin: 1rem;
+                max-height: 150px;
+            }
+
+            @media (max-width: $phone) {
+                .jdp-logo {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .jdp-disclaimer {
+        margin: 2rem 0;
+        width: 60%;
+        @media (max-width: $small-laptop) {
+            width: 100%;
+        }
+
+        p {
+            color: $gray;
+            text-decoration: underline;
+        }
+
+        small {
+            color: $gray;
+        }
+    }
+
+    .lower-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @media (max-width: $phone) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .border-right {
+            border-right: 1px solid $gray;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            @media (max-width: $phone) {
+               border-right: 0;
+            }
+        }
+    }
+
+    .disclaimer-text {
+        color: $gray;
+        font-size: 0.8rem;
+        margin: 1rem 0;
+
+        a {
+            color: $gray;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

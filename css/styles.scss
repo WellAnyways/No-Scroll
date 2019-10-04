@@ -1,0 +1,123 @@
+@import './partials/variables';
+@import './partials/resets';
+@import './partials/header';
+// Page Styles
+
+.main-container {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $tablet) {
+        height: auto;
+    }
+    @media (max-width: $phone) {
+    }
+}
+
+.main-background-v1 {
+    background-image: url('../images/temp-bg.jpg');
+}
+.main-background-v2 {
+    background-image: url('../images/temp-bg-2.jpg');
+}
+.main-background-v3 {
+    background-image: url('../images/temp-bg-3.jpg');
+}
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $laptop) {
+    }
+    @media (max-width: $tablet) {
+        flex-direction: column;
+    }
+    @media (max-width: $phone) {
+    }
+}
+
+.left-column {
+    margin: 3rem auto;
+    height: 80vh;
+    width: 30%;
+    @media (max-width: $laptop) {
+        width: 40%;
+        margin: 1rem auto;
+    }
+    @media (max-width: $tablet) {
+        width: 80%;
+        height: 72vh;
+    }
+    @media (max-width: $phone) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.right-column {
+    width: 30%;
+    margin: 3rem auto;
+    @media (max-width: $laptop) {
+        margin: 1rem auto;
+        width: 40%;
+    }
+    @media (max-width: $tablet) {
+        margin: 0 auto;
+        width: 80%
+    }
+    @media (max-width: $phone) {
+        width: 100%;
+    }
+
+    .hero-container {
+        background-color: $white;
+        padding: 1rem;
+        border-radius: 1rem;
+        @media (max-width: $laptop) {
+        }
+        @media (max-width: $tablet) {
+        }
+        @media (max-width: $phone) {
+            border-radius: 0;
+            margin: 0;
+        }
+    }
+
+    .hero-header-image {
+        margin: auto;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .hero-text-h1 {
+        font-size: 3rem;
+        color: $black;
+        font-weight: 300;
+        line-height: 3.2rem;
+    }
+
+    .hero-tagline {
+        color: $yellow;
+        font-size: 2rem;
+    }
+
+    .hero-body-text {
+        padding: 2rem 0;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
+
+@import './partials/footer';
+@import './partials/modal';
+@import './partials/utilities';
